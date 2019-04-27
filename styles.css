@@ -1,0 +1,37 @@
+.title {
+    text-align: center;
+}
+
+.submit-post, .loading, .search-posts {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.loading {
+    text-align: center;
+}
+
+.posts {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.posts > div {
+    background: hsl(0, 0%, 95%);
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.posts > div > p {
+    word-wrap: break-word;
+}
+
+.posts > div:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}

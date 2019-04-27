@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--The below meta tag defines content as ANYTHING, which was the only solution I could find to interact with the web page but is by all means the most insecure way of doing so-->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">
+    <title>Social Media Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!--<script src="index.js" type="text/javascript"></script>
+    <script src="client.js" type="text/javascript"></script>-->
+
+</head>
+<body>
+    <header>
+        <h1 class="title">Social Media Timeline</h1>
+    </header>
+    <main>
+        <form class="submit-post">
+            <label for="name">Name</label>
+            <input class="u-full-width" type="text" id="name" name="name">
+            <label for="content">Content</label>
+            <textarea class="u-full-width" type="text" id="content" name="content"></textarea>
+            <button class="button-primary">Submit Post</button>
+        </form>
+
+        <form class="search-posts">
+            <label for="search">Search</label>
+            <input class="u-full-width" type="text" id="search-content" name="search-content">
+            <button class="button-primary">Search</button>
+        </form>
+
+        <div class="posts">
+            
+        </div>
+
+        <div class="button-container">
+            <p id="loadMore">Scroll to load more posts</p>
+        </div>
+        <div class="loading">
+            <img src="loading.gif" alt=""> 
+         </div>
+    </main>
+    <script src="client.js"></script>
+</body>
+</html>
